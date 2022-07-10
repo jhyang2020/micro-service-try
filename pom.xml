@@ -19,6 +19,8 @@
     <modules>
         <module>try-mybatis</module>
         <module>try-util</module>
+        <module>try-minio</module>
+        <module>try-minio</module>
     </modules>
 
     <properties>
