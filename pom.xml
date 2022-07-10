@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -17,6 +18,7 @@
 
     <modules>
         <module>try-mybatis</module>
+        <module>try-util</module>
     </modules>
 
     <properties>
@@ -25,12 +27,19 @@
         <commons-collections>3.2.2</commons-collections>
         <commons-lang3>3.12.0</commons-lang3>
         <lombok>1.18.24</lombok>
+        <okhttp>3.14.9</okhttp>
+        <junit>4.13.2</junit>
     </properties>
 
 
     <dependencyManagement>
         <dependencies>
             <!--   工具类           -->
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp}</version>
+            </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
@@ -51,6 +60,18 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok}</version>
             </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.36</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
