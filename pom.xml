@@ -31,11 +31,19 @@
         <lombok>1.18.24</lombok>
         <okhttp>3.14.9</okhttp>
         <junit>4.13.2</junit>
+        <minio>8.2.2</minio>
+        <slf4j-api>1.7.36</slf4j-api>
     </properties>
 
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>io.minio</groupId>
+                <artifactId>minio</artifactId>
+                <version>${minio}</version>
+            </dependency>
             <!--   工具类           -->
             <dependency>
                 <groupId>com.squareup.okhttp3</groupId>
@@ -71,7 +79,7 @@
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>1.7.36</version>
+                <version>${slf4j-api}</version>
             </dependency>
 
         </dependencies>
