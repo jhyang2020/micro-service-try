@@ -1,9 +1,9 @@
 package com.fh.trymybatis.Test;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @Author jhYang
@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
  * @Discription todo
  */
 @Data
-@Slf4j
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Student {
