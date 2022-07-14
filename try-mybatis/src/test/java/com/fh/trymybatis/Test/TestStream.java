@@ -37,7 +37,7 @@ public class TestStream {
     */
     public static void testFlatMap(List<Student> list) {
 
-        Object[] objects = list.stream().toArray();
+        list.stream().toArray();
     }
 
         /**
