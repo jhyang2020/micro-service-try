@@ -98,6 +98,11 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.fh.trymybatis.TryMybatisApplication</mainClass>
+                        </manifest>
+                    </archive>
                     <descriptors>
                         <!-- 描述文件路径 -->
                         <descriptor>src/main/assembly/assembly.xml</descriptor>
