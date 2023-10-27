@@ -13,6 +13,6 @@ public class OkhttpTest {
     public void addTest(){
         String url = "https://gd3.alicdn.com/imgextra/i2/2583364731/O1CN01oxbeg11koqL72S4Dz_!!2583364731.jpg";
         OkHttpUtils okHttpUtils = new OkHttpUtils();
-        okHttpUtils.downFileFromUrl(url, "测试"+".jpg");
+//        okHttpUtils.downFileFromUrl(url, "测试"+".jpg");
     }
 }

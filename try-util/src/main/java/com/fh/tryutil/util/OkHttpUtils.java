@@ -50,28 +50,28 @@ public class OkHttpUtils {
         }
     }
 
-    /**
-     * 下载某文件
-     *
-     * @param url      要下载的链接
-     * @param fileName 下载后文件名
-     */
-    public void downFileFromUrl(String url, String fileName) {
-        OkHttpClient client = new OkHttpClient().newBuilder().build();
-
-        //构建FormBody,传入参数
-        Request request = new Request.Builder()
-                .url(url)
-                .get()
-                .addHeader("Authorization", "XXX")
-                .build();
-
-        try {
-            Response response = client.newCall(request).execute();
-            byte[] resp = Objects.requireNonNull(response.body()).bytes();
-            FileHandleUtils.getFileByBytes(resp, fileName );
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    /**
+//     * 下载某文件
+//     *
+//     * @param url      要下载的链接
+//     * @param fileName 下载后文件名
+//     */
+//    public void downFileFromUrl(String url, String fileName) {
+//        OkHttpClient client = new OkHttpClient().newBuilder().build();
+//
+//        //构建FormBody,传入参数
+//        Request request = new Request.Builder()
+//                .url(url)
+//                .get()
+//                .addHeader("Authorization", "XXX")
+//                .build();
+//
+//        try {
+//            Response response = client.newCall(request).execute();
+//            byte[] resp = Objects.requireNonNull(response.body()).bytes();
+//            FileHandleUtils.getFileByBytes(resp, fileName );
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 }

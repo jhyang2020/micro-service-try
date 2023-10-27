@@ -32,11 +32,18 @@
         <okhttp>3.14.9</okhttp>
         <minio>8.2.2</minio>
         <slf4j-api>1.7.36</slf4j-api>
+        <fastjson>1.2.78</fastjson>
     </properties>
 
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>com.huaban</groupId>
+                <artifactId>jieba-analysis</artifactId>
+                <version>1.2.0</version>
+            </dependency>
 
             <dependency>
                 <groupId>io.minio</groupId>
@@ -74,6 +81,11 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j-api}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson}</version>
             </dependency>
 
         </dependencies>
